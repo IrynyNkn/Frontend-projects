@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(187, 232, 238);
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+}
+
+.gallery__pic {
+  height: 80vh;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery__pic h3 {
+  opacity: 0;
+}
+
+.gallery__pic--active {
+  flex: 5;
+}
+
+.gallery__pic--active h3 {
+  opacity: 1;
+  transition: opacity 0.75s ease-in;
+}
+
+.gallery__text {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
