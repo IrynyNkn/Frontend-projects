@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tools</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="header">
+          <span class="header__rock">Rock</span>,
+          <span class="header__paper">Paper</span>,
+          <span class="header__scissors">Scissors</span>
+        </h1>
+      </header>
+      <main>
+        <div class="game">
+          <div class="game__container">
+            <div class="game__buttons">
+              <div class="game__buttons__container" id="rock">
+                <img src="../img/hand-rock-regular.svg" />
+              </div>
+              <div class="game__buttons__container" id="paper">
+                <img src="../img/hand-paper-regular.svg" alt="paper" />
+              </div>
+              <div class="game__buttons__container" id="scissors">
+                <img src="../img/hand-scissors-regular.svg" alt="scissors" />
+              </div>
+            </div>
+            <div class="game__log">
+              <div class="game__log__text"></div>
+            </div>
+            <div class="game__reset"><a id="reset">Reset</a></div>
+          </div>
+        </div>
+      </main>
+      <section class="rules">
+        <div class="rules__box">
+          <h2 class="rules__box__header">Game Rules</h2>
+          <div class="rules__box__item">
+            <ul>
+              <li>Scissors beats a paper</li>
+              <li>Paper beats rock</li>
+              <li>Rock beats scissors</li>
+              <li>And we play up to three wins!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="score">
+        <h2>Score</h2>
+        <div class="score__box">
+          <div class="score__box__wins">
+            <div class="score__box__wins__count">0</div>
+            <div class="score__box__wins__text">wins</div>
+          </div>
+          <div class="score__box__dash">-</div>
+          <div class="score__box__loses">
+            <div class="score__box__loses__count">0</div>
+            <div class="score__box__loses__text">loses</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

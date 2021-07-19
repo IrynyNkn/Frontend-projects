@@ -1,0 +1,208 @@
+@import "../scss/vars.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $base-font;
+  background-image: linear-gradient(90deg, $pinkish, $violet);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "head head"
+    "main rules"
+    "main score";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 4fr 3fr;
+  width: 90%;
+  height: 90%;
+  background-color: $transpatent-light;
+  box-shadow: 0px 0px 9px 3px #3d3c3c3a;
+  border-radius: $round;
+}
+
+header {
+  grid-area: head;
+  h1 {
+    margin: 10px 0;
+  }
+}
+
+main {
+  grid-area: main;
+  box-shadow: $shadow;
+  border-radius: $round;
+  padding: 5px 15px;
+}
+
+.rules {
+  grid-area: rules;
+  box-shadow: $shadow;
+  border-radius: $round;
+  padding: 5px 15px;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__box__header {
+    @include header2;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+}
+
+.score {
+  grid-area: score;
+  box-shadow: $shadow;
+  border-radius: $round;
+  padding: 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    @include header2;
+    margin-top: 0;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    &__wins__count,
+    &__loses__count,
+    &__dash {
+      font-size: $score-font;
+      font-weight: 600;
+    }
+
+    &__wins__text,
+    &__loses__text {
+      font-size: 20px;
+    }
+  }
+}
+
+.header {
+  text-align: center;
+  font-size: 40px;
+
+  &__rock {
+    font-family: $rock;
+  }
+
+  &__paper {
+    font-family: $paper;
+  }
+
+  &__scissors {
+    font-family: $scissors;
+  }
+}
+
+.game {
+  padding: 30px;
+  height: 100%;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__log {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-size: 30px;
+      font-weight: 600;
+      color: $dark-violet;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__buttons__container {
+    background-color: $btn-light;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50px;
+    }
+  }
+
+  &__buttons__container:hover {
+    transform: $scale;
+    cursor: pointer;
+  }
+
+  &__reset {
+    a {
+      display: inline-block;
+      border: 2px solid $dark-violet;
+      background-color: $transpatent-light;
+      border-radius: 10px;
+      padding: 10px 25px 10px 30px;
+      color: $dark-violet;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: $rock;
+      letter-spacing: 5px;
+    }
+
+    a:hover {
+      transform: $scale;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "head head"
+      "main main"
+      "score rules";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px 400px 200px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

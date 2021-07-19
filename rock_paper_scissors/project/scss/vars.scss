@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&family=Luckiest+Guy&family=Mr+Dafoe&display=swap");
+
+@mixin header2 {
+  font-family: $paper;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+$dark-violet: #593868;
+$btn-light: rgba(255, 247, 247, 0.658);
+$scale: scale(1.2);
+$base-font: "Lato", sans-serif;
+$rock: "Luckiest Guy", cursive;
+$paper: "Indie Flower", cursive;
+$scissors: "Mr Dafoe", cursive;
+$shadow: 0px 0px 5px 2px #6e5c77;
+$round: 10px;
+$score-font: 56px;
+$transpatent-light: rgba(219, 213, 213, 0.192);
+$light: #e2e4e6;
+$dark: #23292c;
+$violet: #bb9bcc;
+$pinkish: #fdbfaa;
