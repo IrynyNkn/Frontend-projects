@@ -1,0 +1,185 @@
+﻿* {
+  outline: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background: url(../img/header-bg.jpg);
+  background-size: cover;
+}
+
+.header {
+  height: 70vh;
+  color: white;
+}
+
+.header a {
+  color: white;
+}
+
+.header__nav {
+  height: 20%;
+}
+
+.header__nav__logo {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.header__heading {
+  height: 60%;
+}
+
+.header__heading h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.services__heading h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.services__heading span {
+  font-size: 24px;
+  display: block;
+  padding: 10px;
+}
+
+.line {
+  width: 55px;
+  height: 2px;
+  margin: 0 auto;
+}
+
+.services__items h3 {
+  font-size: 36px;
+}
+
+.services__items p {
+  font-size: 20px;
+}
+
+.services__btn {
+  background: url("../img/touch-bg.png");
+  background-position: center;
+  padding: 10px 45px;
+  border-radius: 30px;
+  color: white;
+}
+
+.images__pics img {
+  width: 95%;
+  padding-bottom: 14%;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.references__img div {
+  width: 350px;
+  height: 350px;
+}
+
+.references__img div > img:nth-of-type(2n-1) {
+  height: 92%;
+  width: 92%;
+  top: 0;
+  right: 0;
+}
+
+.references__img div > img:nth-of-type(2n) {
+  height: 60%;
+  width: 60%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.references__text {
+  max-width: 50%;
+}
+
+.references > div {
+  padding: 15px;
+}
+
+.references__nav__circle {
+  width: 12px;
+  height: 12px;
+}
+
+.references__nav div:nth-of-type(2n-1) {
+  background-color: #62436f;
+}
+
+.references__nav div:nth-of-type(2n) {
+  background-color: #c0b4c5;
+}
+
+.contact {
+  color: white;
+  background-color: black;
+}
+
+.form-control {
+  background-color: transparent;
+  border-style: hidden;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.contact__form__btn {
+  text-transform: uppercase;
+  padding: 10px 50px;
+  color: white;
+  border-radius: 0;
+}
+
+.footer {
+  background: url(../img/footer-bg.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.footer span {
+  font-size: 12px;
+}
+
+.media-icons img {
+  height: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .services__items h3 {
+    font-size: 24px;
+  }
+
+  .references__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__nav__logo {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+}
